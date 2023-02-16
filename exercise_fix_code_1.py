@@ -16,5 +16,6 @@ def calculate_interest_on_savings():
     calculate_taxes()
 
 print_balance()
+print("ok")
 deduct(500)
 calculate_interest_on_savings()
