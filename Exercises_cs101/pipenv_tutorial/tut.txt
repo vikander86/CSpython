@@ -1,0 +1,8 @@
+pipenv --python VERSION
+
+//setup enviroment to the specified python VERSION
+
+
+pipenv install MODULE==VERSION
+
+//install module with or without ==VERSION (==)specifying what version you want to use.
