@@ -1,0 +1,106 @@
+What is the difference between an int and a float in C programming?
+a) An int stores a decimal value, while a float stores a whole number
+b) An int stores a whole number, while a float stores a decimal value
+c) An int is a data type, while a float is a function
+d) There is no difference between an int and a float in C programming
+
+Which of the following operators is used to access the value of a variable through a pointer in C programming?
+a) *
+b) &
+c) %
+d) |
+
+What is the output of the following C code snippet? int x = 3; printf("%d", x++);
+a) 3
+b) 4
+c) 2
+d) 1
+
+What is the purpose of the "continue" keyword in C programming?
+a) To skip the current iteration of a loop
+b) To exit a loop
+c) To start a new loop
+d) To print output to the console
+
+What is the purpose of the "typedef" keyword in C programming?
+a) To define a new type
+b) To declare a variable
+c) To perform arithmetic operations
+d) To print output to the console
+
+What is the difference between the "++x" and "x++" operators in C programming?
+a) There is no difference between "++x" and "x++" in C programming
+b) "++x" increments the value of x before using it, while "x++" increments the value of x after using it
+c) "++x" decrements the value of x before using it, while "x++" decrements the value of x after using it
+d) "++x" and "x++" are used for logical operations in C programming
+
+What is the purpose of the "NULL" keyword in C programming?
+a) To represent a null pointer
+b) To perform arithmetic operations
+c) To declare a variable
+d) To print output to the console
+
+What is the purpose of a header file in C programming?
+a) To define functions and variables that can be used in multiple C files
+b) To declare variables
+c) To print output to the console
+d) To read input from the console
+
+What is the purpose of a structure in C programming?
+a) To group related variables together
+b) To declare a variable
+c) To perform arithmetic operations
+d) To print output to the console
+
+What is the purpose of the "strcpy" function in C programming?
+a) To copy a string from one variable to another
+b) To compare two strings
+c) To concatenate two strings
+d) To print output to the console
+
+What is the difference between a static and dynamic memory allocation in C programming?
+a) There is no difference between a static and dynamic memory allocation in C programming
+b) A static memory allocation is allocated at compile time, while a dynamic memory allocation is allocated at runtime
+c) A static memory allocation is allocated at runtime, while a dynamic memory allocation is allocated at compile time
+d) A static memory allocation is used for arithmetic operations, while a dynamic memory allocation is used for logical operations
+
+What is the purpose of the "fopen" function in C programming?
+a) To open a file for reading or writing
+b) To close a file
+c) To compare two strings
+d) To perform arithmetic operations
+
+What is the purpose of the "enum" keyword in C programming?
+a) To define a new type with a set of named constants
+b) To declare a variable
+c) To print output to the console
+d) To read input from the console
+
+What is the purpose of the "strtok" function in C programming?
+a) To break a string into a series of tokens
+b) To concatenate two strings
+c) To compare two strings
+d) To print output to the console
+
+What is the purpose of the "const" keyword in C programming?
+a) To declare a variable as read-only
+b) To declare a variable as write-only
+c) To compare two variables
+d) To print output to the console
+
+b
+a
+a
+a
+a
+b
+a
+a
+a
+a
+b
+a
+a
+a
+a
+
