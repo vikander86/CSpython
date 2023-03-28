@@ -60,29 +60,79 @@ class LinkedList:
                     current_node = next_node
     
     def swap_nodes(self, value1, value2):
+        print(f'Swapping {value1} and {value2}')
         node1_prev = None
         node2_prev = None
         node1 = self.head_node
         node2 = self.head_node
         
         if value1 == value2:
-            print("No swap needed. ${} == ${}").format(value1, value2)
+            print(f'No swap needed. {value1} == {value2}')
+            return
+        
+        #find location of node1 and its previous node
+        while node1 is not None:
+            if node1.get_value() == value1:
+                break
+            node1_prev = node1
+            node1 = node1.get_next_node()
+        
+        #find location of node2 and its previous node
+        while node2 is not None:
+            if node2.get_value() == value2:
+                break
+            node2_prev = node2
+            node2 = node2.get_next_node()
+        
+        #if neither node found, return
+        if node1 is None and node2 is None:
+            print("No node found")
+            return
+        
+        #if node1 is the head, add node2 to the head.
+        if node1_prev is None:
+            self.head_node = node2
+        else:
+            #else add node2 to the next of node1's previous node.
+            node1_prev.set_next_node(node2)
+        
+        #if node2 is the head, add node1 to the head.
+        if node2_prev is None:
+            self.head_node = node1
+        else:
+            #else add node1 to the next of node2's previous node
+            node2_prev.set_next_node(node1)
+
+        #set node2s next node to node1s next node
+        #and vice versa
+        temp = node1.get_next_node()
+        node1.set_next_node(node2.get_next_node())
+        node2.set_next_node(temp)
+
+            
+        
+            
+        
+        
 
 
-list1 = LinkedList("4")
+list1 = LinkedList(4)
 list1.insert_beginning(5)
 list1.insert_beginning(6)
 list1.insert_beginning(8)
 list1.insert_beginning(11)
 list1.insert_beginning(13)
-list2 = LinkedList("Test")
-list2.insert_beginning("!")
-list2.insert_beginning("Dig")
-list2.insert_beginning("På")
-list2.insert_beginning("Hey")
-
+list1.swap_nodes(13,5)
+list1.swap_nodes(6,8)
+list1.swap_nodes(5,4)
+list1.swap_nodes(3,2)
 list1.print_list()
-list2.print_list()
+# list2 = LinkedList("Test")
+# list2.insert_beginning("!")
+# list2.insert_beginning("Dig")
+# list2.insert_beginning("På")
+# list2.insert_beginning("Hey")
+# list2.print_list()
 
 # print(list1.stringify_list())
 # list1.remove_node(4)
